@@ -1,0 +1,162 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sam's Catering</title>
+	
+	<!--links to CSS stylesheet-->
+	<link type="text/css" rel="stylesheet" href="styles.css">
+	
+	<!--Link to Google Fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Anonymous+Pro|Damion|Fira+Mono:400,500|Nanum+Gothic+Coding|Permanent+Marker|Rock+Salt|Space+Mono" rel="stylesheet">
+	
+	<!--viewport for mobile-->
+	<meta name="viewport" content="width=device-width, content-scale=1">
+	
+	<!---------------- Code For FlexSlider --------------------->
+	<!-- Place somewhere in the <head> of your document -->
+<link rel="stylesheet" href="flexslider.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="jquery.flexslider-min.js"></script>
+
+	<!-- Place in the <head>, after the three links -->
+<script type="text/javascript" charset="utf-8">
+  $(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+</script>
+	<!----------------------End Flexslider Code ------------------>
+	
+</head>
+
+<body>
+<div class="container">
+  <header>
+	 <img src="assets/graphics/hamburger_icon_trans.png" alt="hamburger" width="201" height="186" class="hamico">
+    <h1><a name="top">Sam's Catering</a></h1>
+  </header>
+<nav>
+	<ul>
+		<li><a href="#services">Services</a></li>  
+	 
+		<li><a href="#testimonials">Testimonials</a></li>  
+	  
+		<li><a href="#contact">Contact</a></li>  
+	</ul>	  
+</nav>
+<main>
+    <section class="intro">
+      <h1>Introduction</h1>
+		  <p>Welcome to Sam's Catering! Since 1980, Sam's Catering has been serving the greater Sacramento community for decades. We specialize in serving up delicious, mouth-watering, meat-and-potato dishes that make the perfect hearty meal for any event. Even better, our specially-selected wine specialists can recommend a tasteful pairing of wine or alcohol for your dishes. </p> 
+
+		<p>Whether it be birthdays, bar-mitzvahs, weddings or corporate events, we've got you covered. Let us help you celebrate your event your way. Call us today!</p>
+    </section><!--end intro-->
+	  
+    <!-- Flexslider gallery -->
+	<div class="flexslider">
+	  <ul class="slides">
+		<li>
+		  <img src="assets/images/slides/ravioliSteak_1024x768.jpg" width="1000" height="750" alt="ravioli"/>
+		</li>
+		<li>
+		  <img src="assets/images/slides/twoBurgersInHands_1024x768.jpg" width="1000" height="750" alt="two burgers"/>
+		</li>
+		<li>
+		  <img src="assets/images/slides/freshIngredients_1024x768.jpg" width="1000" height="750" alt="fresh ingredients"/>
+		</li>
+		  <li>
+		  <img src="assets/images/slides/beerPour_1024x768.jpg" width="1000" height="750" alt="hand pouring beer"/>
+		</li>
+		  <li>
+		  <img src="assets/images/slides/soupCupWBread_1024x768.jpg" width="1000" height="750" alt="soup cup"/>
+		</li>
+		  <li>
+		  <img src="assets/images/slides/NoodleMeatDish_1024x768.jpg" width="1000" height="750" alt="noodles dish"/>
+		</li>
+	  </ul>
+	</div> <!--end gallery-->
+	  
+    <div class="flex">
+    	<section class="services">
+        	<h1><a name="services">Services</a></h1>
+          
+			<h2>Standard Menu Bundle</h2>
+			  <p>We'll send you our famous tried-and-true classic menu for you to select your preferred dishes.This includes a total package of soups, salads, appetizers, sandwiches, and main dishes in a bundle, at our flat fee of $250.00 for up to 50 people. Groups of more will be an add-on cost.</p>
+			<h2>Vegetarian Bundle</h2>
+			  <p>Though we specialize in meat and potatos, we understand the needs of our vegetarian friends. Let us serve you dishes from our specialized vegetarian menu, either in a bundle or as an add-on selection to your main meal.</p>
+			<h2>Seasonal Special</h2>
+			  <p>Sam's Catering offers special discounts for parties of 200 or more people, on Christmas, Halloween, Thanksgiving, Hanukkah, and Memorial day. Ask about this special and we'll give you a 10% discount or more on your final price, depending on your party size.</p>
+			<h2>Deluxe Catering Service</h2>
+			  <p>The Grand Royale of our catering business, Sam's Catering offers a deluxe catering service that includes not just our typical menu but our special gourmet menu. Our gourmet menu is prepared by our top-tier Italian and French chefs to deliver a fantastic dining experience.</p>
+        </section><!--end services-->
+        
+      <section class="testimonials">
+        <h1><a name="testimonials">Testimonials</a></h1>
+			<ul>
+			  <li>"Sam's catering was fantastic. Their deluxe option was amazing, and I felt like I was eating real 5-star restaurant food!" -Steve M.</li>
+			  <li>"I love that they have a vegetarian menu, it's perfect for our annual Pro-Veg conferences."  -Stacy C.</li>
+				<li>"Sam and his wife Marie have been running this business for decades. I tell everybody to use their service." - Kate W.</li>
+				<li>"For Thanksgiving we got their turducken and stuffing, and their scalloped potatoes. They were so good, my family kept asking for the recipe." -Jake L.</li>
+			  </ul>
+        </section><!--end testimonials-->
+    </div><!--end flex-->
+    
+	<div class="flex">
+		<!---- FORM --->
+    <section class="contform">
+      <h1><a name="contact">Contact</a></h1>
+      <form>
+        <label>Name</label>
+		 <input type="text" id="name" name="name" placeholder="Full name">
+		  
+		  <label>Phone #</label>
+		 <input type="text" id="phone" name="phone" placeholder="(xxx) xxx-xxxx">
+		  <p>Note: We'll call you to confirm your catering needs.</p>
+		  
+		  <label>Street Address of Event</label>
+		 <input type="text" id="street" name="address" placeholder="12345 Some Road">
+		 <input type="text" id="city/state" name="city/state" placeholder="City, State, ZIP">
+		
+		  <label>Type of Event:</label>
+		  <select id="eventtype" name="event">
+		  	<option value="Breakfast | Lunch | Brunch">Breakfast | Lunch | Brunch</option>
+			<option value="Corporate gatherings">Corporate gatherings</option>
+		  	<option value="Holiday Parties">Holiday Parties</option>
+			<option value="Birthdays">Birthdays</option>
+			<option value="Weddings">Weddings</option>
+			<option value="Graduations">Graduations</option>
+		  </select>
+		  
+		  <label>Select a Package:</label>
+		  <select id="pkgtype" name="package">
+		  	<option value="Standard Menu Bundle">Menu Bundle 1</option>
+			<option value="Vegetarian Bundle">Vegetarian Menu</option>
+		  	<option value="Seasonal Special">Seasonal Special</option>
+			<option value="Deluxe Catering Service">Deluxe Catering Service</option>
+		  </select>
+		  
+		  <label>Number of Guests (Approximate):</label>
+		 <input type="text" id="guests" name="guests" placeholder="give a range (10-20)">
+		  
+		  <label>Additional Instructions:</label>
+		  <textarea></textarea>
+		  <button type="submit">Submit</button>
+        </form>
+      </section><!--end contform--><!-- end FORM -->
+		
+		<section class="ham">
+			<h1>Thanks For Visiting!</h1>
+			<h1><img src="assets/graphics/hamburger_icon_trans.png" alt="hamburger" width="201" height="186" class="hamico"></h1>
+		</section>
+    </div><!--end flex div-->
+    	<footer>
+		<ul>
+		  <li>© Sam's Catering 1980 - 2019</li>
+		  <li><a href="#top">Back to Top</a></li>
+		</ul>
+      </footer>
+  </main>
+</div><!--end container div-->
+		
+</body>
+</html>

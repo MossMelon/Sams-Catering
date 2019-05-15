@@ -1,0 +1,214 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+nav {
+	border-style: dashed;
+	border-width: 0 5px 5px 5px;
+	border-color: #E56F40;
+}
+nav ul li a  {
+	color: #E56F40;
+	padding: 10px;
+	display: block;
+}
+nav ul {
+	display: flex;
+	justify-content: center;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/******************* End CSS Reset ******************/
+/*************** Styling Here ********************/
+
+.container {
+	min-width: 320px;
+	margin: auto;
+	max-width: 1000px;
+	background-color: hsla(16,100%,98%,0.80);
+}
+section {
+	padding-top: 10px;
+	padding-right: 30px;
+	padding-left: 30px;
+	padding-bottom: 25px;
+	flex: 1;
+}
+section:nth-child(even) {
+	background-color: hsla(29,13%,60%,0.50);
+}
+.testimonials ul li {
+	padding-bottom: 104px;
+}
+header {
+	height: 200px;
+	background-color: #842A33;
+	display: flex;
+	justify-content: center;
+	border-left: 5px dashed #E56F40;
+	border-right: 5px dashed #E56F40;
+	border-bottom: 0 dashed #E56F40;
+	border-top: 0 dashed #E56F40;
+	align-items: center;
+}
+.container header h1 {
+	font-family: 'Rock Salt';
+	color: #FFF7F4;
+	font-size: 3vw;
+}
+section h1   {
+	font-family: 'Rock Salt';
+	margin: 20px 0 20px 0;
+	font-size: 20px;
+}
+section h2 {
+	font-family: 'Damion';
+	font-size: 18px;
+}
+.ham {
+	overflow: hidden;
+	display: flow-root;
+}
+.ham h1 {
+	display: block;
+	margin: auto;
+	position: relative;
+	bottom: -68%;
+	left: auto;
+	right: -31%;
+}
+body {
+	background-color: #FFF7F4;
+	font-family: 'Anonymous Pro', 'Fira Mono', 'Space Mono';
+	color: #17172B;
+	line-height: 18px;
+	background-image: url(assets/graphics/plus_wallpaper.png);
+	background-repeat: repeat;
+}
+p {
+	padding: 10px 0 10px 0;
+	max-width: 700px;
+}
+footer {
+	background-color: #842A33;
+	padding: 10px 0 10px 0;
+	color: #FFF7F4;
+	font-family: inherit;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-left: 5px dashed #E56F40;
+	border-right: 5px dashed #E56F40;
+	border-bottom: 0 dashed #E56F40;
+	border-top: 5px dashed #E56F40;
+}
+footer ul li a {
+	list-style: none;
+	color: #E56F40;
+	text-decoration-style: dotted;
+}
+a:link a:visited {
+	text-decoration: none;
+	color: #E56F40;
+}
+a:hover a:active {
+	background-color: #E56F40;
+	color: #E56F40;
+	text-decoration: none;
+}
+form {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	padding: 15px;
+	justify-content: center;
+}
+form input, select, textarea, button{
+	margin-bottom: 10px;
+	width: 400px;
+	height: 30px;
+	resize: vertical;
+}
+button:hover {
+	border: thin none;
+	background-color: #E56F40;
+}
+.contform {
+	background-color: hsla(16,100%,98%,0.30);
+	background-position-x: 50px;
+}
+.hamico {
+	float: left;
+	margin-left: -14px;
+	margin-right: 10px;
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 480px) {
+/* Styles */
+	.container {min-width: 320px; max-width: 480px;}
+	section h1 {font-size: 40px;}
+	header h1 {font-size: 2vw;}
+}
+
+
+@media only screen and (min-width: 650px) {
+	.container {max-width:768px;}
+	.flex {display: flex;}
+}
+
+@media only screen and (min-width: 1000px) {
+	.container {max-width: 1000px;}
+	
+	
+}
